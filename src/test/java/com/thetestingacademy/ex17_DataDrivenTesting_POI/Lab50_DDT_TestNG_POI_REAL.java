@@ -20,6 +20,11 @@ public class Lab50_DDT_TestNG_POI_REAL extends CommonToAll {
     @Test(dataProvider = "getData")
     public void test_vwo_login(String email, String password) {
 
+//        // 1) Simple split (escape pipe)
+//        String[] parts1 = password.split("\\|");
+//        System.out.println("parts1[0] = '" + parts1[0] + "'");
+//        System.out.println("parts1[1] = '" + parts1[1] + "'");
+
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://app.vwo.com");
         System.out.println(driver.getTitle());
